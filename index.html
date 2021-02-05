@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery - Advanced CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<style>
+.grid-container{
+	max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+    grid-gap: 50px;
+}
+.inside{
+    background-color: blue;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.place{
+	width: 200px;
+}
+.title{
+	text-align: center;
+}
+.grid-container2,
+.grid-container1{
+	max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+}
+.grid-container2{
+	margin-top: 50px;
+}
+@media screen and (min-width:769px) and (max-width: 1024px) {
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.grid-container2 p{
+		font-size: 18px;
+	}
+}
+@media screen and (min-width:415px) and (max-width: 768px) {
+	.grid-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (min-width:250px) and (max-width: 414px) {
+	.grid-container {
+		grid-template-columns: repeat(1, 1fr) !important;
+		justify-items: center;
+	}
+	.grid-container2 p{
+		display: none;
+	}
+	.grid-container1 h1{
+		text-align: center;
+	}
+}
+
+
+
+</style>
+<div class="grid-container1">
+	<h1>Gallery Heading</h1>
+</div>
+<div class="grid-container">
+	<div class="details">
+		<div class="inside">
+			<img class="place" src="images/placeholder-image.png" alt="Placeholder Image" />
+		</div>
+		<p class="title">Image Title</p>
+	</div>
+	<div class="details">
+		<div class="inside">
+			<img class="place" src="images/placeholder-image.png" alt="Placeholder Image" />
+		</div>
+		<p class="title">Image Title</p>
+	</div>
+	<div class="details">
+		<div class="inside">
+			<img class="place" src="images/placeholder-image.png" alt="Placeholder Image" />
+		</div>
+		<p class="title">Image Title</p>
+	</div>
+	<div class="details">
+		<div class="inside">
+			<img class="place" src="images/placeholder-image.png" alt="Placeholder Image" />
+		</div>
+		<p class="title">Image Title</p>
+	</div>
+	<div class="details">
+		<div class="inside">
+			<img class="place" src="images/placeholder-image.png" alt="Placeholder Image" />
+		</div>
+		<p class="title">Image Title</p>
+	</div>
+	<div class="details">
+		<div class="inside">
+			<img class="place" src="images/placeholder-image.png" alt="Placeholder Image" />
+		</div>
+		<p class="title">Image Title</p>
+	</div>
+	<div class="details">
+		<div class="inside">
+			<img class="place" src="images/placeholder-image.png" alt="Placeholder Image" />
+		</div>
+		<p class="title">Image Title</p>
+	</div>
+	<div class="details">
+		<div class="inside">
+			<img class="place" src="images/placeholder-image.png" alt="Placeholder Image" />
+		</div>
+		<p class="title">Image Title</p>
+	</div>
+	<div class="details">
+		<div class="inside">
+			<img class="place" src="images/placeholder-image.png" alt="Placeholder Image" />
+		</div>
+		<p class="title">Image Title</p>
+	</div>
+	<div class="details">
+		<div class="inside">
+			<img class="place" src="images/placeholder-image.png" alt="Placeholder Image" />
+		</div>
+		<p class="title">Image Title</p>
+	</div>
+</div>
+<div class="grid-container2">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+</div>
+</body>
+</html>
